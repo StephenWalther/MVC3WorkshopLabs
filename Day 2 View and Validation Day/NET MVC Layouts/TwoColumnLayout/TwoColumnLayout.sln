@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoColumnLayout", "TwoColumnLayout\TwoColumnLayout.csproj", "{BADFEC10-09B3-40DB-98FA-16332369CF40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BADFEC10-09B3-40DB-98FA-16332369CF40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADFEC10-09B3-40DB-98FA-16332369CF40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADFEC10-09B3-40DB-98FA-16332369CF40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADFEC10-09B3-40DB-98FA-16332369CF40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+(from u in Users
+where u.DisplayName == "Jon Skeet"
+select new {u.Badges}).FirstOrDefault()
+
+

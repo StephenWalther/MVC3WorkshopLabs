@@ -1,0 +1,11 @@
+67185 <asp.net> Tags using below query:
+
+(from p in Posts
+where p.Tags.Contains("<asp.net>")
+select p).Count()
+
+70849 <jquery> tags using below query:
+
+(from p in Posts
+where p.Tags.Contains("<jquery>")
+select p).Count()

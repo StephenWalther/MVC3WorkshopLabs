@@ -1,0 +1,50 @@
+﻿@model IEnumerable<TasksList.Models.Task>
+
+@{
+    ViewBag.Title = "TasksList";
+}
+
+<h2>TasksList</h2>
+
+<p>
+     @Html.ActionLink("Back to Persons", "Index")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Name
+        </th>
+        <th>
+            DateCreated
+        </th>
+        <th>
+            Difficulty
+        </th>
+        <th>
+            IsDone
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>      
+           
+        </td>
+        <td>
+            @item.Name
+        </td>
+        <td>
+            @String.Format("{0:g}", item.DateCreated)
+        </td>
+        <td>
+            @item.Difficulty
+        </td>
+        <td>
+            @item.IsDone
+        </td>
+    </tr>
+}
+
+</table>
+

@@ -1,0 +1,11 @@
+//query syntax
+(from t in Titles
+where t.Rating != null
+orderby t.Rating
+select t).Take(10)
+
+
+//Extension method syntax
+Titles.Where (t => (t.Rating != null))
+   .OrderBy (t => t.Rating)
+   .Take (10)

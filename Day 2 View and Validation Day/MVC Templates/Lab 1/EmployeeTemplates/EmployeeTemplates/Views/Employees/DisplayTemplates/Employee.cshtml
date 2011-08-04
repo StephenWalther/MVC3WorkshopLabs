@@ -1,0 +1,38 @@
+﻿@model EmployeeTemplates.Models.Employee
+@{
+    Layout = null;
+}
+<style type="text/css">
+    div
+    {
+        padding: 10px;
+        color: Maroon;
+    }
+    
+    fieldset 
+    {
+     width : 25%;    
+     padding: 5px;  
+     border: 1px dotted red;
+     }
+     
+     legend
+     {
+      padding: 5px;
+      background-color : Red;
+      color: White;    
+     }
+</style>
+<fieldset>
+    <legend>Employee Details</legend>
+    <div>
+        <b>Employee Name</b>
+        <br />
+        @Model.Name
+    </div>
+    <div>
+        <b>Phone Number </b>
+        <br />
+        @Model.Phone
+    </div>
+</fieldset>

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<LinkListCustomHelper.Controllers.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Product List</h2>
+
+@foreach (var item in Model) {   
+    
+            @Html.ActionLink(item.Name, "Product", new { id = item.Id });
+                                                  <br />
+            //@Html.ActionLink("Edit", "Edit", new { id=item.Id })        
+    
+}
+
+
+

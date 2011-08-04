@@ -1,0 +1,9 @@
+// Query syntax
+
+(from p in Posts
+orderby p.ViewCount descending
+select p).Take(10)
+
+//Extension method syntax
+Posts.OrderByDescending (p => p.ViewCount)
+   .Take (10)

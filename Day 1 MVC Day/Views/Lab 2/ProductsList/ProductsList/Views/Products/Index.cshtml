@@ -1,0 +1,35 @@
+﻿@model ProductsList.Models.Product
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>
+    Products List</h2>
+@{
+    
+    var products = new List<Product>()
+    {
+     new Product { Id=1 , Name = "Book" , Price= 20.75M , OnSale = false},
+     new Product { Id=2 , Name = "Bat" , Price= 21.0M , OnSale = false},
+     new Product { Id=3 , Name = "Ball" , Price= 22.50M , OnSale = true}     
+    };
+}
+<div>
+    Name Price
+</div>
+
+@{
+    var total = 0M;
+ }
+
+@foreach (var product in products)
+{
+    string style = product.OnSale ? "background-color: red" : "background-color: white";
+    
+    <div style="@style" >
+        @product.Name @product.Price.ToString()
+    </div> 
+    total += product.Price;
+}
+
+Total: @total

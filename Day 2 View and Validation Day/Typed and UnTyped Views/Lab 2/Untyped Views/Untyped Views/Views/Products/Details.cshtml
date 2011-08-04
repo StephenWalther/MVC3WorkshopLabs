@@ -1,0 +1,21 @@
+﻿@model Untyped_Views.Models.ViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+@foreach (var p in @Model.Products) { 
+ <div>
+    @p.Name @p.Price
+ </div>
+ 
+}
+
+@foreach (var c in @Model.Categories) { 
+    <div>
+    @c.Name
+    </div>    
+}

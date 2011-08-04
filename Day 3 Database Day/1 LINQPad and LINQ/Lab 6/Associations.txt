@@ -1,0 +1,5 @@
+(from p in People.Expand("TitlesActedIn")
+			 where p.Name == "George Lucas"
+			 select p).Single()
+
+ People.Expand("TitlesActedIn").Where(p => p.Name == "George Lucas").First() .TitlesActedIn.Select(t => t)

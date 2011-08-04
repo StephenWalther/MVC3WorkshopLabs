@@ -1,0 +1,3 @@
+(from t in Titles
+orderby t.Runtime descending
+select t).FirstOrDefault()

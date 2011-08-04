@@ -1,0 +1,11 @@
+//query syntax
+
+(from t in Titles
+orderby t.Rating descending
+select t).Take(10)
+
+
+//Extension method syntax
+Titles.OrderByDescending (t => t.Rating)
+   .Take (10)
+

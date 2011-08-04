@@ -1,0 +1,9 @@
+//Query syntax
+
+from t in Titles
+where t.Name.Contains("Tuesday")
+select t
+
+//Extension method syntax
+
+Titles.Where (t => t.Name.Contains ("Tuesday"))

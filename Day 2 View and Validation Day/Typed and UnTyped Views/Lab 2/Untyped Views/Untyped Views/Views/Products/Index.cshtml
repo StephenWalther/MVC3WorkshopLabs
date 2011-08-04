@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h2>
+    View Bag and View Data</h2>
+<h4>
+    Products List
+</h4>
+@foreach (var p in (IList<Product>)ViewData["Products"])
+{ 
+    <div>
+        @p.Name @p.Price
+    </div>
+}
+<h4>
+    Category List
+</h4>
+@foreach (var category in (IList<Category>)ViewBag.Categories)
+{
+    <div>
+        @category.Name
+    </div>
+}

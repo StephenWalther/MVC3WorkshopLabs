@@ -1,0 +1,41 @@
+﻿<html>
+<head>
+    <title>Create</title>
+</head>
+<body>
+    <form action="/Customers/Create" method="post">
+    
+    <div>
+        <label>First Name</label>
+        <input name="FirstName" />
+    </div>
+
+    <div>
+        <label>Last Name</label>
+        <input name="LastName" />
+    </div>
+
+     <div>
+        <label>Billing City</label>
+        <input name="BillingAddress.City" />
+    </div>
+      <div>
+        <label>Billing Street</label>
+        <input name="BillingAddress.Street" />
+    </div>
+
+     <div>
+        <label>Shipping City</label>
+        <input name="ShippingAddress.City" />
+    </div>
+    <div>
+        <label>Shipping Street</label>
+        <input name="ShippingAddress.Street" />
+    </div>
+    <div>
+        <input type="submit" value="Save" />
+    </div>
+
+    </form>
+</body>
+</html>

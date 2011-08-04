@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@{
+    
+    List<string> strings = new List<string>();
+    
+    strings.Add("1");
+    strings.Add("2");
+    strings.Add("3");
+    
+    var fruit = new string[] { "apple", "pear", "tomato" };
+   
+     }
+  
+   @Html.CustomGrid("myTable", (System.Collections.IList)fruit, null)

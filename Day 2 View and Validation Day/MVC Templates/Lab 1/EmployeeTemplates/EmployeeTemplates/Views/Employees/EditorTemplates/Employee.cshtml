@@ -1,0 +1,24 @@
+﻿@model  EmployeeTemplates.Models.Employee
+<style type="text/css">
+    div
+    {
+        padding: 10px;
+        color: Maroon;        
+    }
+</style>
+<fieldset>
+    <legend>Employee Information </legend>
+    <div>
+        Name:
+        <br />
+        @Html.EditorFor(model => model.Name)
+    </div>
+    <div>
+        Phone:
+        <br />
+        @Html.EditorFor(model => model.Phone)
+    </div>
+    <div>
+        <input type="submit" value="Submit" />
+    </div>
+</fieldset>

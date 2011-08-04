@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Add";
+}
+<h2>
+    Add</h2>
+@using (Html.BeginForm())
+{ 
+
+    <div class="editor-label">
+    </div>    
+    @Html.Label("First Number")
+    @Html.TextBox("Number1")
+    <div class="editor-label">
+    </div>    
+
+    <div class="editor-label">
+        @Html.Label("Second Number")
+        @Html.TextBox("Number2")
+    </div>    
+
+    <div>
+        <input type="submit" value="Create" />
+    </div>    
+}

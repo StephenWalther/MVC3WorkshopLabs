@@ -1,0 +1,3 @@
+from g in Genres.Expand("Titles")
+where g.Name == "Film Noir"
+select g

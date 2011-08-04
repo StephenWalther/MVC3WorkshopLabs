@@ -1,0 +1,26 @@
+@model ProductsCatalog.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Products</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">Price</div>
+    <div class="display-field">@Model.Price</div>
+
+    <div class="display-label">UnitsInStock</div>
+    <div class="display-field">@Model.UnitsInStock</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

@@ -1,0 +1,8 @@
+//query syntax
+(from u in Users
+orderby u.Reputation descending
+select u).Take(10)
+
+//extension method syntax
+Users.OrderByDescending (u => u.Reputation)
+   .Take (10)

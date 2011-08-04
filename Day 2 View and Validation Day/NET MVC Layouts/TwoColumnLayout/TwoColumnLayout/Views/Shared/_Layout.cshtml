@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.4.4.min.js")" type="text/javascript"></script>
+    <style type="text/css">
+        .leftnav
+        {
+            float: left;
+            width: 110px;
+            background-color: #ffffff;
+            color: Black;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        
+        .maincontent
+        {
+            float: left;
+            background-color: White;
+            color: Black;
+            padding: 0px 10px 10px 10px;
+        }
+        
+        .footer
+        {
+            clear: both;
+            background-color: Black;
+            color: White;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../../Content/themes/base/images/toystore.jpeg" alt="ToyStore Logo" />
+        <div class="leftnav">
+            @if(IsSectionDefined("LeftNav")){
+            @RenderSection("LeftNav")
+            }
+        </div>
+        <div class="maincontent">
+            @RenderBody()
+        </div>
+    </div>
+    <div class="footer">
+        @if (IsSectionDefined("FooterSection"))
+        { 
+            @RenderSection("FooterSection")
+        }
+    </div>
+</body>
+</html>
